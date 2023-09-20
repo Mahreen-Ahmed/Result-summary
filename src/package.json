@@ -2,7 +2,7 @@
   "name": "src",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "/src/index.html",
   "scripts": {
     "test": "echo \"Error: nothing specified\" && exit 1",
     "scss": "node-sass --watch sass -o css"
