@@ -31,25 +31,28 @@
       <div class="performance--summary">
         <h2>Summary</h2>
         <ul>
+        <li class="summarytag light-red"><span class="category"><img src="src/images/icon-reaction.svg" alt="icon-reaction"
+              class="icon">Reaction</span>
+          <p class="score">80<span>/ 100</span></p>
+        </li>
+        <li class="summarytag light-yellow"><span class="category"><img src="src/images/icon-memory.svg" alt="icon-memory"
+              class="icon">Memory</span>
+          <p class="score">92<span>/ 100</span></p>
+        </li>
+        <li class="summarytag light-green"><span class="category"><img src="src/images/icon-verbal.svg" alt="icon-verbal"
+              class="icon">Verbal</span>
+          <p class="score">61<span>/ 100</span></p>
+        </li>
+        <li class="summarytag light-purple"><span class="category"><img src="src/images/icon-visual.svg" alt="icon-visual"
+              class="icon">Visual</span>
+          <p class="score">72<span>/ 100</span></p>
+        </li> 
         </ul>
         <button class="btn-continue">Continue</button>
       </div>
     </div>
   </section>
-    <script>
-    const markslist = document.querySelector('ul');
-
-   fetch('/data.json')
-          .then(res => res.json())
-          .then(data => {
-              data.forEach(marks => {
-                  markslist.insertAdjacentHTML('beforeend', `<li class="summarytag ${marks.class}"><span class="category"><img src="${marks.icon}" alt="icon-reaction"
-                    class="icon">${marks.category}</span>
-                <p class="score">${marks.score}<span>/ 100</span></p>
-              </li>`)
-              });
-    })
-  </script>
+   <script src="src/js/main.js"></script>
 
 </body>
 
