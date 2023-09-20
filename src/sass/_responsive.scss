@@ -1,0 +1,32 @@
+.performancecard {
+    @media screen and (max-width:580px) {
+        display: block;
+        padding: 0;
+    }
+}
+
+.performance {
+    @media screen and (max-width:850px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:580px) {
+        border-radius: 0;
+    }
+
+    .performance--score {
+        @media screen and (max-width:850px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width:580px) {
+            border-radius: 0;
+        }
+    }
+
+    .performance--summary {
+        @media screen and (max-width:850px) {
+            width: 100%;
+        }
+    }
+}

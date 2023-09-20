@@ -1,0 +1,159 @@
+.performancecard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10vw;
+
+    @media screen and (max-width:580px) {
+        display: block;
+        padding: 0;
+    }
+}
+
+.performance {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+
+    &--score {
+        padding: 40px 60px;
+        width: 50%;
+        background-image: linear-gradient(hsla(256, 72%, 46%, 0.9), hsla(241, 72%, 46%, 0.9) 80%);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            color: hsl(252, 100%, 86%);
+            margin: 30px auto;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        p {
+            color: hsl(252, 100%, 86%);
+            margin: 30px auto;
+            text-align: center;
+            font-size: 18px;
+            max-width: 300px;
+        }
+
+        .mainscore {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            margin-inline: auto;
+            background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0.1) 70%);
+            font-size: 43px;
+
+            p {
+                font-size: 80px;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            sub {
+                color: #c6b8ff;
+                font-size: 14px;
+                display: block;
+                font-weight: 100;
+            }
+        }
+
+        .score-desc {
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+        }
+
+
+    }
+
+    &--summary {
+        padding: 40px 60px;
+        width: 50%;
+
+        h2 {
+            color: hsl(224, 13%, 35%);
+        }
+
+        .summarytag {
+            display: flex;
+            margin: 30px 0;
+            justify-content: space-between;
+            padding: 18px;
+            border-radius: 10px
+        }
+
+        .category {
+            display: flex;
+            gap: 10px;
+        }
+
+        p.score {
+            display: flex;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .score span {
+            color: grey;
+        }
+
+        .light-red {
+            background-color: rgba(255, 204, 203, 0.2);
+
+            span {
+                color: #f45e5e;
+            }
+        }
+
+        .light-yellow {
+            background-color: rgba(255, 176, 31, 0.2);
+
+            span {
+                color: rgba(255, 176, 31, 1);
+            }
+        }
+
+        .light-green {
+            background-color: rgba(0, 189, 145, 0.2);
+
+            span {
+                color: rgba(0, 189, 145, 1);
+            }
+        }
+
+        .light-purple {
+            background-color: rgba(17, 37, 212, 0.2);
+
+            span {
+                color: rgba(17, 37, 212, 1);
+            }
+        }
+
+        button.btn-continue {
+            outline: none;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            border-radius: 50px;
+            background-color: hsl(224, 30%, 27%);
+            font-size: 22px;
+            color: #fff;
+        }
+
+        button.btn-continue:hover {
+            background-image: linear-gradient(hsla(256, 72%, 46%, 0.9), hsla(241, 72%, 46%, 0.9) 80%);
+        }
+    }
+}

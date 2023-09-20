@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'HankenGrotesk', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2; }
+
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-weight: 500;
+  src: url(/src/fonts/HankenGrotesk-VariableFont_wght.ttf); }
+
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-weight: 600;
+  src: url(/src/fonts/static/HankenGrotesk-Bold.ttf); }
+
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-weight: 700;
+  src: url(/src/fonts/static/HankenGrotesk-ExtraBold.ttf); }
+
+.performancecard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10vw; }
+  @media screen and (max-width: 580px) {
+    .performancecard {
+      display: block;
+      padding: 0; } }
+
+.performance {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 30px; }
+  .performance--score {
+    padding: 40px 60px;
+    width: 50%;
+    background-image: linear-gradient(rgba(78, 33, 202, 0.9), rgba(36, 33, 202, 0.9) 80%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .performance--score h2 {
+      color: #c6b8ff;
+      margin: 30px auto;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500; }
+    .performance--score p {
+      color: #c6b8ff;
+      margin: 30px auto;
+      text-align: center;
+      font-size: 18px;
+      max-width: 300px; }
+    .performance--score .mainscore {
+      width: 160px;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-bottom: 30px;
+      margin-inline: auto;
+      background-image: linear-gradient(#4e21ca, rgba(36, 33, 202, 0.1) 70%);
+      font-size: 43px; }
+      .performance--score .mainscore p {
+        font-size: 80px;
+        color: #fff;
+        font-weight: 700; }
+      .performance--score .mainscore sub {
+        color: #c6b8ff;
+        font-size: 14px;
+        display: block;
+        font-weight: 100; }
+    .performance--score .score-desc {
+      text-align: center;
+      color: #fff;
+      font-size: 30px; }
+  .performance--summary {
+    padding: 40px 60px;
+    width: 50%; }
+    .performance--summary h2 {
+      color: #4e5465; }
+    .performance--summary .summarytag {
+      display: flex;
+      margin: 30px 0;
+      justify-content: space-between;
+      padding: 18px;
+      border-radius: 10px; }
+    .performance--summary .category {
+      display: flex;
+      gap: 10px; }
+    .performance--summary p.score {
+      display: flex;
+      gap: 10px;
+      font-size: 16px; }
+    .performance--summary .score span {
+      color: grey; }
+    .performance--summary .light-red {
+      background-color: rgba(255, 204, 203, 0.2); }
+      .performance--summary .light-red span {
+        color: #f45e5e; }
+    .performance--summary .light-yellow {
+      background-color: rgba(255, 176, 31, 0.2); }
+      .performance--summary .light-yellow span {
+        color: #ffb01f; }
+    .performance--summary .light-green {
+      background-color: rgba(0, 189, 145, 0.2); }
+      .performance--summary .light-green span {
+        color: #00bd91; }
+    .performance--summary .light-purple {
+      background-color: rgba(17, 37, 212, 0.2); }
+      .performance--summary .light-purple span {
+        color: #1125d4; }
+    .performance--summary button.btn-continue {
+      outline: none;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      border-radius: 50px;
+      background-color: #303b5a;
+      font-size: 22px;
+      color: #fff; }
+    .performance--summary button.btn-continue:hover {
+      background-image: linear-gradient(rgba(78, 33, 202, 0.9), rgba(36, 33, 202, 0.9) 80%); }
+
+@media screen and (max-width: 580px) {
+  .performancecard {
+    display: block;
+    padding: 0; } }
+
+@media screen and (max-width: 850px) {
+  .performance {
+    flex-direction: column; } }
+
+@media screen and (max-width: 580px) {
+  .performance {
+    border-radius: 0; } }
+
+@media screen and (max-width: 850px) {
+  .performance .performance--score {
+    width: 100%; } }
+
+@media screen and (max-width: 580px) {
+  .performance .performance--score {
+    border-radius: 0; } }
+
+@media screen and (max-width: 850px) {
+  .performance .performance--summary {
+    width: 100%; } }
